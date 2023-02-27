@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Mod Error Checker</name>
+	<author>Taranchuk</author>
+	<url/>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>Taranchuk.ModErrorChecker</packageId>
+	<description>The mod will check other mods for various errors and show them on startup with mod names. The following errors can be caught:
+- Old assemblies that aren't compiled against the newest game version and contain missing fields or methods references.
+- Various XML errors like missing thing class, worker class, comp classes, or sound files.
+
+Useful if you have mods updated to 1.4 but still have old assemblies not working properly or have some misconfigured XML code.
+
+You can use the log output to file bug reports to mod authors but check if you have the mods updated to latest versions.</description>
+</ModMetaData>
