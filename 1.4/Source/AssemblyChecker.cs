@@ -78,10 +78,10 @@ namespace ModErrorChecker
                     //        .GetType().Name + ":" + type.Name + ", count: " + group.Count() + ".");
                     //}
                 }
-
-                for (int j = 0; j < thingDef.AllRecipes.Count; j++)
+                var recipes = thingDef.AllRecipes;
+                for (int j = 0; j < recipes.Count; j++)
                 {
-                    RecipeDef recipeDef = thingDef.AllRecipes[j];
+                    RecipeDef recipeDef = recipes[j];
                     foreach (var product in recipeDef.products)
                     {
                         if (product.thingDef is null)
@@ -140,7 +140,7 @@ namespace ModErrorChecker
         {
             "System", "Cecil", "Multiplayer", "Prepatcher", "HeavyMelee", "0Harmony", "UnityEngine", "mscorlib",
             "ICSharpCode", "Newtonsoft", "ISharpZipLib", "NAudio", "Unity.TextMeshPro", "ModErrorChecker", "NVorbis",
-            "com.rlabrecque.steamworks.net", "Assembly-CSharp-firstpass"
+            "com.rlabrecque.steamworks.net", "Assembly-CSharp-firstpass", "CombatAI", "MonoMod"
         };
         private static bool TypeValidator(Type type)
         {
