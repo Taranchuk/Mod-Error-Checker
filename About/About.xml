@@ -5,6 +5,7 @@
 	<url/>
 	<supportedVersions>
 		<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
 	<packageId>Taranchuk.ModErrorChecker</packageId>
 	<description>The mod will check other mods for various errors and show them on startup with mod names. The following errors can be caught:
